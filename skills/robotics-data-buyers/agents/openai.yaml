@@ -1,0 +1,15 @@
+interface:
+  display_name: "Robotics Data Buyers"
+  short_description: "Find qualified buyers for agricultural robotics video data"
+  default_prompt: "Use $robotics-data-buyers to research potential buyers for my agricultural video dataset and return a sourced prospect spreadsheet."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "treg"
+      description: "Treg company research, people search and work-email tools"
+      transport: "streamable_http"
+      url: "https://treg.to/mcp/"
+
+policy:
+  allow_implicit_invocation: true
